@@ -4,7 +4,7 @@ function consultarSuperHeroAPI(numero) {
     url: "https://www.superheroapi.com/api.php/4905856019427443/" + numero,
     dataType: "json",
     success: function (response) {
-      $("#resultado").html(""); 
+      $("#resultado").html("");
       let cardHTML = `
       <h2> SuperHero Encontrado </h2>
       <div class="card card-horizontal">
@@ -37,8 +37,9 @@ function consultarSuperHeroAPI(numero) {
     },
     error: function (error) {
       console.error("Error al realizar la solicitud a la API:", error);
-      $("#resultado").html("No se pudo encontrar un superhéroe con ese número. Vuelvve a intentarlo");
-    }
+      $("#resultado").html(
+        "No se pudo encontrar un superhéroe con ese número. Vuelvve a intentarlo"
+      );
+    },
   });
 }
-
