@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 function validarNumero(numero) {
   var regex = /^[0-9]+$/;
-  if (!regex.test(numero) || numero < 1 || numero > 731) {
+  if (regex.test(numero) === false || numero < 1 || numero > 731) {
     $(".errorNumero").text("Por favor, ingresa un número del 1 al 731.");
     $("#numero").addClass("error");
     return false;
