@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: url(../img/fondo.webp);
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+/* nav  */
+
+nav div img {
+  width: 3rem;
+}
+
+/* seccion principal */
+
+.principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.principal img {
+  width: 35rem;
+  margin: 15px 0px;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+input {
+  border: solid 1px black;
+  width: 500px;
+  margin-top: 10px;
+}
+
+button {
+  width: 100px;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+/* seccion completa de resultado del superhero */
+
+.resultadoHero {
+  width: 1000px;
+  display: flex;
+  margin: 30px 40px;
+}
+
+.canvasjs-chart-canvas {
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.canvasjs-chart-credit {
+  display: none;
+}
+
+/* prueba animacion */
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.rotate-image {
+  animation: rotate 1.5s linear;
+}
